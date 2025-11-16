@@ -13,9 +13,12 @@ class Calculator:
         self.user_input()
 
     def user_input(self) -> None:
-        self.input_text: str = input(";\t")
+        self.input_text: str = input("; ")
         if self.input_text != "exit":
-            print("\t\t", self.input_text)
+            try:
+                print("\t", eval(self.input_text))
+            except (NameError, SyntaxError) as e:
+                print(e)
             self.user_input()
         else:
             return
