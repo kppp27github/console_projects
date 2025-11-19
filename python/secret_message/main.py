@@ -10,13 +10,13 @@ class SecretMessage:
     def __init__(self) -> None:
         print("\n[ S e c r e t M e s s a g e ]\n")
         print("\t-Programmer: Koushik Saha")
-        print('\n# Type "exit" to close from this program.\n')
-        print("-> Options: \n")
-        print("1. Encode Message")
-        print("2. Decode Message")
+        print('\n# Type "exit" to close from this program.')
         self.options()
 
     def options(self) -> None:
+        print("\n-> Options: \n")
+        print("1. Encode Message")
+        print("2. Decode Message")
         self.selected_option: str = input("\nSelect an option: ")
         match self.selected_option:
             case "1":
