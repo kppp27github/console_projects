@@ -22,7 +22,7 @@ class SecretMessage:
             case "1":
                 print(f"\n[Encoded Message]: {self.encode_message()}")
             case "2":
-                self.decode_message()
+                print(f"\n[Decoded Message]: {self.decode_message()}")
             case "exit":
                 return
             case _:
@@ -34,7 +34,8 @@ class SecretMessage:
         return msg
 
     def decode_message(self) -> str:
-        return ""
+        msg: str = input("\nMessage: ")
+        return msg
 
 
 sm: SecretMessage = SecretMessage()
