@@ -1,7 +1,7 @@
 # console_projects
 All of my CLI projects
 
-##Folder Structure:
+<h1>Folder Structure:</h1>
   #Python:
     Project Name: Calculator;
     Project Name: SecretMessage;
